@@ -1,1 +1,1 @@
-https://martapaszkowska.github.io/goit-markup-hw-06/
+https://martapaszkowska.github.io/goit-markup-hw-07/
