@@ -68,12 +68,16 @@ body {
 }
 @media (max-width: 480px) {
 	.navi,
-	.contact {
+	.contact,
+	.feature-icons,
+	.done-header,
+	.done-list {
 		display: none;
 	}
 }
 @media (min-width: 768px) {
-	.menu-toggle {
+	.menu-toggle,
+	.menu-container {
 		display: none;
 	}
 }
@@ -82,7 +86,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	border: none;
-	background-color: transparent;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
@@ -146,7 +149,7 @@ body {
 	flex-direction: column;
 	gap: 40px;
 	list-style: none;
-	padding-top: 40px;
+	margin-top: 42px;
 }
 .item-navi-menu {
 	font-family: "Roboto", sans-serif;
