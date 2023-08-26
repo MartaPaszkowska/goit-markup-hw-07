@@ -25,6 +25,8 @@ body {
 	letter-spacing: 0.02em;
 }
 .conteiner {
+	display: flex;
+	justify-content: center;
 	width: 100%;
 	max-width: 1158px;
 	padding: 0px 15px;
@@ -233,14 +235,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 48px;
-	padding-top: 188px;
-	padding-bottom: 188px;
 }
 .bg-hero {
 	display: flex;
 	justify-content: center;
-	max-width: 1440px;
 	background-color: var(--navybluemodal);
 	background-image: radial-gradient(
 			circle,
