@@ -30,6 +30,19 @@
         <li><a href="tel:+110001111111" class="item-contact">+11 (000) 111-11-11</a>
         </li>
       </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+          <g clip-path="url(#clip0_297068_2681)">
+            <path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866" stroke="#2E2F42"
+              stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <defs>
+            <clipPath id="clip0_297068_2681">
+              <rect width="32" height="22" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -106,8 +119,12 @@
         <ul class="team">
           <li>
             <figure class="team-item">
-              <img src="./images/mainpage/team1.jpg" alt="A smiling man who is a Product Designer in our company"
-                width="264" height="260">
+
+              <img src="./images/mainpage/team1-264.jpg" alt="A smiling man who is a Product Designer in our company"
+                srcset="
+                ./images/mainpage/team1-264.jpg 264w,
+                ./images/mainpage/team1-528.jpg 528w,
+                ./images/mainpage/team1-792.jpg 792w" sizes="264px">
               <figcaption class="team-figcaption">
                 <h3 class="team-header">Mark Guerrero</h3>
                 <p>Product Designer</p>
@@ -146,8 +163,12 @@
           </li>
           <li>
             <figure class="team-item">
-              <img src="./images/mainpage/team2.jpg" alt="A smiling man who is a Frontend Developer in our company"
-                width="264" height="260">
+              <img src="./images/mainpage/team2-264.jpg" alt="A smiling man who is a Frontend Developer in our company"
+                srcset="
+                                ./images/mainpage/team2-264.jpg 264w,
+                                ./images/mainpage/team2-528.jpg 528w,
+                                ./images/mainpage/team2-792.jpg 792w" sizes="264px">
+
               <figcaption class="team-figcaption">
                 <h3 class="team-header">Tom Ford</h3>
                 <p>Frontend Developer</p>
@@ -186,8 +207,13 @@
           </li>
           <li>
             <figure class="team-item">
-              <img src="./images/mainpage/team3.jpg" alt="A smiling woman who is a Marketing specialist in our company"
-                width="264" height="260">
+
+              <img src="./images/mainpage/team3-264.jpg"
+                alt="A smiling woman who is a Marketing specialist in our company" srcset="
+                                                        ./images/mainpage/team3-264.jpg 264w,
+                                                        ./images/mainpage/team3-528.jpg 528w,
+                                                        ./images/mainpage/team3-792.jpg 792w" sizes="264px">
+
               <figcaption class="team-figcaption">
                 <h3 class="team-header">Camila Garcia</h3>
                 <p>Marketing</p>
@@ -226,8 +252,11 @@
           </li>
           <li>
             <figure class="team-item">
-              <img src="./images/mainpage/team4.jpg" alt="A smiling man who is a UI Designer in our company" width="264"
-                height="260">
+              <img src="./images/mainpage/team4-264.jpg" alt="A smiling man who is a UI Designer in our company" srcset="
+                                                                                ./images/mainpage/team4-264.jpg 264w,
+                                                                                ./images/mainpage/team4-528.jpg 528w,
+                                                                                ./images/mainpage/team4-792.jpg 792w"
+                sizes="264px">
               <figcaption class="team-figcaption">
                 <h3 class="team-header">Daniel Wilson</h3>
                 <p>UI Designer</p>
@@ -374,6 +403,66 @@
     </div>
   </footer>
 
+  <div class="menu-container js-menu-container is-hidden" id="mobile-menu">
+    <button js-close-menu type="button" class="close-btn-menu"><svg width="8" height="8">
+        <use href="./images/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <nav>
+      <ul class="navi-menu">
+        <li><a href="./index.html" class="item-navi-menu active-menu">Studio</a></li>
+        <li><a href="./portfolio.html" class="item-navi-menu">Portfolio</a></li>
+        <li><a href="#" class="item-navi-menu">Contacts</a></li>
+      </ul>
+    </nav>
+    <ul class="contact-menu">
+      <li><a href="tel:+110001111111" class="item-contact-tel">+11 (000) 111-11-11</a>
+      </li>
+      <li><a href="mailto:info@devstudio.com" class="item-contact-mail">info@devstudio.com</a>
+      </li>
+    </ul>
+    <ul class="social-list-menu">
+      <li>
+        <a href="#" class="social-list-menu-icons">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-list-menu-icons">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-list-menu-icons">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook-1"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-list-menu-icons">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin-1"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
+
+
+
+
+
+
+
+
+
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="close-btn"><svg width="8" height="8">
@@ -391,13 +480,9 @@
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-
-
-
           <label class="label-form" for="phone">Phone</label>
           <div class="icons-position">
-            <input class="frame-form" type="tel" name="phone" id="phone" pattern="[0-9]{14}"
-              required>
+            <input class="frame-form" type="tel" name="phone" id="phone" pattern="[0-9]{14}" required>
             <svg class="icons-form" width="18" height="18">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
@@ -413,10 +498,7 @@
           <div class="icons-position">
             <textarea class="comment-form" name="comment" placeholder="Text input" id="comment" required></textarea>
           </div>
-
           <div class="agreement">
-
-
             <label class="agreement-text" for="mark">
               <input class="check-input" type="checkbox" name="mark" value="agreement" id="mark" required>
               <span class="check-span">
