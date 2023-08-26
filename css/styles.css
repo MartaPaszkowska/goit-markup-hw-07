@@ -24,6 +24,27 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
+@media (max-width: 480px) {
+	.navi,
+	.contact,
+	.feature-icons,
+	.not-mobile {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.menu-toggle,
+	.menu-container {
+		display: none;
+	}
+}
+.top-line {
+	background: var(--white);
+	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+		0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+	border-bottom: 1px solid var(--cornflower);
+}
 .conteiner {
 	min-width: 320px;
 	max-width: 1200px;
@@ -34,13 +55,6 @@ body {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-.top-line {
-	background: var(--white);
-	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-		0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-	border-bottom: 1px solid var(--cornflower);
 }
 .top {
 	min-width: 428px;
@@ -66,20 +80,97 @@ body {
 .studio {
 	color: var(--navyblue);
 }
-@media (max-width: 480px) {
-	.navi,
-	.contact,
-	.feature-icons,
-	.done-header,
-	.done-list {
-		display: none;
-	}
+.bg-hero {
+	display: flex;
+	height: 432px;
+	background-color: var(--navybluemodal);
+	background-image: radial-gradient(
+			circle,
+			rgba(46, 47, 66, 0.7) 100%,
+			rgba(255, 255, 255, 0) 0%
+		),
+		url("../images/mainpage/bghero.jpg");
+	background-size: cover, cover;
 }
-@media (min-width: 768px) {
-	.menu-toggle,
-	.menu-container {
-		display: none;
-	}
+.hero {
+	color: var(--cloud);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.text-hero {
+	margin-top: 112px;
+	margin-bottom: 72px;
+	font-size: 36px;
+	width: 320px;
+	font-weight: 700;
+}
+.button-hero {
+	margin: 0 auto;
+	padding: 16px 32px;
+	border-radius: 4px;
+	background-color: var(--iris);
+	border: none;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	color: var(--cloud);
+	transition-property: transform;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.button-hero:hover,
+.button-hero:focus {
+	background-color: var(--ocean);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transform: scale(1.2);
+}
+.section {
+	padding: 96px 0px;
+}
+.feature {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 72px;
+}
+.feature-item {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+	width: 396px;
+}
+.feature-icons {
+	box-sizing: content-box;
+	border-radius: 4px;
+	background-color: var(--cloud);
+	padding: 24px 100px;
+}
+.feature-header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	color: var(--navyblue);
+	color: var(--navyblue, #2e2f42);
+}
+.feature-text {
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.32px;
+	align-self: stretch;
+}
+.bg-light {
+	background-color: var(--cloud);
+}
+.done-header {
+	display: flex;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	color: var(--navyblue);
 }
 .menu-toggle {
 	display: flex;
@@ -97,6 +188,7 @@ body {
 	min-width: 40px;
 	display: inline-flex;
 }
+
 .menu-container {
 	position: fixed;
 	top: 0;
@@ -226,47 +318,7 @@ body {
 	background-color: var(--ocean);
 	transform: scale(1.2);
 }
-.bg-hero {
-	display: flex;
-	height: 432px;
-	background-color: var(--navybluemodal);
-	background-image: radial-gradient(
-			circle,
-			rgba(46, 47, 66, 0.7) 100%,
-			rgba(255, 255, 255, 0) 0%
-		),
-		url("../images/mainpage/bghero.jpg");
-	background-size: cover, cover;
-}
-.text-hero {
-	margin-top: 112px;
-	margin-bottom: 72px;
-	font-size: 36px;
-	width: 320px;
-	font-weight: 700;
-	color: var(--white);
-}
-.button-hero {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	padding: 16px 32px;
-	border-radius: 4px;
-	background-color: var(--iris);
-	border: none;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-	color: var(--cloud);
-	transition-property: transform;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-}
-.button-hero:hover,
-.button-hero:focus {
-	background-color: var(--ocean);
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-	cursor: pointer;
-	transform: scale(1.2);
-}
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -431,11 +483,4 @@ body {
 .sub-button:focus {
 	cursor: pointer;
 	transform: scale(1.1);
-}
-.box {
-	position: relative;
-	width: 360px;
-	height: 300px;
-	margin: 0 auto;
-	overflow: hidden;
 }
