@@ -488,7 +488,7 @@ body {
 	height: 40px;
 	border-radius: 4px;
 	border: 1px solid var(--white);
-	box-shadow: 0pbuttx 4px 4px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	color: var(--white);
 	font-size: 12px;
 	padding-left: 16px;
