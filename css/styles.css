@@ -321,7 +321,7 @@ body {
 	cursor: pointer;
 	transform: scale(1.2);
 }
--------------- .bottom-items-three {
+.bottom-items-three {
 	display: flex;
 	flex-direction: column;
 }
