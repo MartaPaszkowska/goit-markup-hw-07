@@ -292,6 +292,7 @@
         </ul>
       </div>
     </section>
+    <!--customers-->
     <section class="section">
       <div class="conteiner">
         <h2 class="customers-header">Customers</h2>
@@ -342,17 +343,18 @@
       </div>
     </section>
   </main>
+  <!--footer-->
   <footer>
     <div class="conteiner bottom">
       <div class="bottom-items-one">
         <a href="./index.html" class="logo-bottom"><span class="web">WEB</span><span class="studio"
             style="color: #f4f4fd">STUDIO</span></a>
-        <p>Increase the flow of customers and sales for your business with digital marketing &
+        <p class="text-bottom">Increase the flow of customers and sales for your business with digital marketing &
           growth
           solutions.</p>
       </div>
       <div class="bottom-items-two">
-        <p>Social media</p>
+        <p class="social-text-bottom">Social media</p>
         <ul class="social-list-icons-bottom">
           <li>
             <a href="#" class="background_sm_footer">
@@ -386,18 +388,21 @@
       </div>
       <div class="bottom-items-three">
         <form>
-          <label class="sub-bottom">
+          <label class="subscribe-text-bottom" for="email">
             Subscribe
-            <input class="subscribe" type="email" name="email" placeholder="E-mail" required>
           </label>
-          <button type="submit" class="sub-button">Subscribe<svg width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <input class="subscribe-input" type="email" name="email" id="email" placeholder="E-mail" required>
+          <div class="subscribe-button-positions">
+            <button type="submit" class="subscribe-button">Subscribe<svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </div>
   </footer>
+  <!--mobile-menu-->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="close-btn-menu js-close-menu"><svg width="8" height="8">
         <use href="./images/icons.svg#icon-x"></use>
@@ -448,6 +453,7 @@
     </ul>
   </div>
   <script src="./js/mobile-menu.js"></script>
+  <!--modal-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="close-btn"><svg width="8" height="8">
@@ -458,7 +464,6 @@
         <p class="header-form">Leave your contacts and we will call you back</p>
         <form>
           <label class="label-form" for="user_name">Name</label>
-
           <div class="icons-position">
             <input class="frame-form" type="text" name="username" id="user_name" required>
             <svg class="icons-form" width="18" height="18">
@@ -487,13 +492,11 @@
             <label class="agreement-text" for="mark">
               <input class="check-input" type="checkbox" name="mark" value="agreement" id="mark" required>
               <span class="check-span">
-
                 <svg class="check-icons" width="10" height="8">
                   <use href="./images/icons.svg#icon-agreement"></use>
                 </svg>
               </span>I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
           </div>
-
           <div class="form-button-place">
             <button class="form-button" type="submit">Send</button>
           </div>
