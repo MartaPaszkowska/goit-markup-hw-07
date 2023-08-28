@@ -51,7 +51,7 @@ body {
 	align-items: center;
 	padding: 24px 16px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 	.top {
 		align-content: center;
 		min-width: 768px;
@@ -60,6 +60,13 @@ body {
 		display: inline-flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+}
+@media (min-width: 768px) {
+	.top {
+		display: flex;
+		align-items: center;
+		padding: 24px 0px;
 	}
 }
 .logo {
@@ -81,9 +88,14 @@ body {
 .web:hover {
 	cursor: pointer;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 	.studio {
 		margin-right: 120px;
+	}
+}
+@media (min-width: 768px) {
+	.studio {
+		margin-right: 76px;
 	}
 }
 .navi {
@@ -136,6 +148,15 @@ body {
 @media (max-width: 480px) {
 	.contact {
 		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.contact {
+		gap: 40px;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		margin-left: auto;
 	}
 }
 .item-contact {
