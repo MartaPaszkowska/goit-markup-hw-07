@@ -304,6 +304,14 @@ body {
 	text-align: center;
 	color: var(--navyblue);
 }
+.skills {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	list-style: none;
+	margin-top: 72px;
+	margin-left: auto;
+}
 .bg-light {
 	background-color: var(--cloud);
 }
