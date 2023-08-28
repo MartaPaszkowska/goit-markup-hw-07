@@ -256,11 +256,13 @@ body {
 	font-size: 36px;
 	font-weight: 700;
 	color: var(--navyblue);
+	margin-bottom: 8px;
 }
 .feature-text {
 	font-size: 16px;
 	font-weight: 500;
 	letter-spacing: 0.32px;
+	line-height: 24px;
 }
 @media (max-width: 1200px) {
 	.not-mobile {
