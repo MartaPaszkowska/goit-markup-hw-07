@@ -58,8 +58,13 @@ body {
 }
 @media (min-width: 768px) {
 	.top {
-		height: 72px;
+		align-content: center;
+		min-width: 768px;
+		min-height: 72px;
 		padding: 16px 16px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 .logo {
@@ -80,6 +85,11 @@ body {
 .studio:hover,
 .web:hover {
 	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.studio {
+		margin-right: 120px;
+	}
 }
 .navi {
 	display: inline-flex;
@@ -113,7 +123,7 @@ body {
 .active::after {
 	position: absolute;
 	right: 0px;
-	bottom: -29px;
+	bottom: -28px;
 	content: "";
 	background-color: var(--ocean);
 	width: 100%;
@@ -122,8 +132,9 @@ body {
 }
 .contact {
 	padding-top: 0%;
-	gap: 40px;
+	gap: 12px;
 	display: flex;
+	flex-direction: column;
 	list-style: none;
 	margin-left: auto;
 }
@@ -135,7 +146,7 @@ body {
 .item-contact {
 	font-family: "Roboto", sans-serif;
 	color: var(--slate);
-	font-size: 16px;
+	font-size: 12px;
 	text-decoration: none;
 	transition-property: color;
 	transition-duration: 250ms;
