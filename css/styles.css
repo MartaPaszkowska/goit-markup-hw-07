@@ -215,9 +215,10 @@ body {
 .feature {
 	list-style: none;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 72px;
+	min-height: 312px;
 }
 @media (min-width: 480px) {
 	.feature {
@@ -228,15 +229,13 @@ body {
 
 .feature-item {
 	display: flex;
-	gap: 8px;
 	flex-direction: column;
 	width: 396px;
 }
 @media (min-width: 480px) {
 	.feature-item {
-		width: 356px;
-		height: 120px;
 		align-items: flex-start;
+		width: 356px;
 	}
 }
 @media (max-width: 1200px) {
