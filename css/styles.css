@@ -56,6 +56,12 @@ body {
 	align-items: center;
 	padding: 24px 16px;
 }
+@media (min-width: 768px) {
+	.top {
+		height: 72px;
+		padding: 16px 16px;
+	}
+}
 .logo {
 	display: inline-flex;
 	padding-top: 0%;
@@ -147,6 +153,12 @@ body {
 	padding: 0;
 	cursor: pointer;
 	outline: none;
+}
+@media (min-width: 768px) {
+	.menu-toggle,
+	.menu-container {
+		display: none;
+	}
 }
 .bg-hero {
 	height: 432px;
