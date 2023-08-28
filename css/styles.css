@@ -189,6 +189,7 @@ body {
 }
 .bg-hero {
 	min-height: 432px;
+	width: 100%;
 	background-color: var(--navybluemodal);
 	background-image: radial-gradient(
 			circle,
@@ -257,6 +258,11 @@ body {
 	.feature-item {
 		align-items: flex-start;
 		width: 356px;
+	}
+}
+@media (min-width: 768px) {
+	.feature-item {
+		width: 264px;
 	}
 }
 @media (max-width: 1200px) {
