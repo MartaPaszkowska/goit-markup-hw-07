@@ -172,7 +172,7 @@ body {
 	}
 }
 .bg-hero {
-	height: 432px;
+	min-height: 432px;
 	background-color: var(--navybluemodal);
 	background-image: radial-gradient(
 			circle,
@@ -186,9 +186,7 @@ body {
 	color: var(--cloud);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	margin: 0 auto;
-	padding: 0%;
 }
 .text-hero {
 	text-align: center;
