@@ -138,25 +138,25 @@ body {
 	border-radius: 2px;
 }
 .contact {
-	padding-top: 0%;
-	gap: 12px;
+	gap: 40px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	list-style: none;
 	margin-left: auto;
+}
+@media (max-width: 768px) {
+	.contact {
+		padding-top: 0%;
+		gap: 12px;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		margin-left: auto;
+	}
 }
 @media (max-width: 480px) {
 	.contact {
 		display: none;
-	}
-}
-@media (min-width: 768px) {
-	.contact {
-		gap: 40px;
-		display: flex;
-		flex-direction: row;
-		list-style: none;
-		margin-left: auto;
 	}
 }
 .item-contact {
@@ -181,7 +181,7 @@ body {
 	cursor: pointer;
 	outline: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 	.menu-toggle,
 	.menu-container {
 		display: none;
