@@ -231,11 +231,6 @@ body {
 	flex-direction: column;
 	width: 396px;
 }
-@media (max-width: 480px) {
-	.feature-icons {
-		display: none;
-	}
-}
 @media (max-width: 768px) {
 	.feature-icons {
 		display: none;
