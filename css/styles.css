@@ -334,6 +334,11 @@ body {
 	row-gap: 72px;
 	column-gap: 16px;
 }
+@media (min-width: 480px) {
+	.customers-list-icons {
+		column-gap: 24px;
+	}
+}
 .customers-icons-images {
 	display: flex;
 	align-items: center;
