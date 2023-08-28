@@ -380,9 +380,12 @@ body {
 	background-color: var(--navyblue);
 	color: var(--cloud);
 }
-.bottom-items-one {
+.bottom-items {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 72px;
 }
 .logo-bottom {
 	display: flex;
@@ -399,14 +402,9 @@ body {
 	width: 268px;
 	margin-top: 17.5px;
 }
-.bottom-items-two {
-	display: flex;
-	flex-direction: column;
-}
 .social-text-bottom {
 	display: flex;
 	justify-content: center;
-	margin-top: 72px;
 }
 .social-list-icons-bottom {
 	display: flex;
@@ -434,16 +432,11 @@ body {
 	cursor: pointer;
 	transform: scale(1.2);
 }
-.bottom-items-three {
-	display: flex;
-	flex-direction: column;
-}
 .subscribe-text-bottom {
 	display: flex;
 	justify-content: center;
 	font-size: 16px;
 	font-weight: 400;
-	margin-top: 72px;
 }
 .subscribe-input {
 	width: 398px;
