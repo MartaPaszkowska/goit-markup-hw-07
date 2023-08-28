@@ -331,7 +331,8 @@ body {
 	flex-wrap: wrap;
 	margin-top: 72px;
 	list-style: none;
-	gap: 24px;
+	row-gap: 72px;
+	column-gap: 16px;
 }
 .customers-icons-images {
 	display: flex;
