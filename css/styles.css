@@ -101,7 +101,7 @@ body {
 	gap: 40px;
 	list-style: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navi {
 		display: none;
 	}
@@ -142,7 +142,7 @@ body {
 	list-style: none;
 	margin-left: auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 	.contact {
 		padding-top: 0%;
 		gap: 12px;
@@ -152,7 +152,7 @@ body {
 		margin-left: auto;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.contact {
 		display: none;
 	}
