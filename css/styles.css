@@ -179,7 +179,7 @@ body {
 	cursor: pointer;
 	outline: none;
 }
-@media (min-width: 468px) {
+@media (min-width: 767px) {
 	.menu-toggle,
 	.menu-container {
 		display: none;
