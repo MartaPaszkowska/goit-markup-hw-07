@@ -467,6 +467,11 @@ body {
 	width: 268px;
 	margin-top: 17.5px;
 }
+@media (min-width: 1200px) {
+	.text-bottom {
+		margin-right: 80px;
+	}
+}
 .social-text-bottom {
 	display: flex;
 	justify-content: center;
@@ -482,6 +487,11 @@ body {
 	gap: 16px;
 	margin-top: 16px;
 	list-style: none;
+}
+@media (min-width: 1200px) {
+	.social-list-icons-bottom {
+		margin-right: 40px;
+	}
 }
 .background-social-footer {
 	display: flex;
