@@ -105,6 +105,7 @@ body {
 	padding: 0;
 	cursor: pointer;
 	outline: none;
+	background-color: transparent;
 }
 @media (min-width: 767px) {
 	.menu-toggle,
