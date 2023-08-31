@@ -528,6 +528,11 @@ body {
 	background-color: var(--navyblue);
 	margin-top: 16px;
 }
+@media (min-width: 480px) {
+	.subscribe-input {
+		width: 398px;
+	}
+}
 @media (min-width: 768px) {
 	.subscribe-input {
 		width: 264px;
