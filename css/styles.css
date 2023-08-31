@@ -100,8 +100,6 @@ body {
 	}
 }
 .menu-toggle {
-	display: flex;
-	justify-content: flex-end;
 	border: none;
 	margin: 0;
 	padding: 0;
