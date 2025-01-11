@@ -637,7 +637,7 @@ body {
 .item-contact-tel {
 	font-family: "Roboto", sans-serif;
 	color: var(--iris);
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 700;
 	line-height: 40px;
 	text-decoration: none;
@@ -663,10 +663,10 @@ body {
 
 .social-list-menu {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 48px;
 	list-style: none;
-	gap: 56px;
+	gap: 30px;
 }
 .social-list-menu-icons {
 	display: flex;
