@@ -195,7 +195,7 @@ body {
 			rgba(46, 47, 66, 0.7) 100%,
 			rgba(255, 255, 255, 0) 0%
 		),
-		url("../images/mainpage/bghero.jpg");
+		url("../images/index/bghero.jpg");
 	background-size: cover, cover;
 }
 .hero {
