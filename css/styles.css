@@ -588,8 +588,8 @@ body {
 }
 .mobile-menu-wrapper {
 	position: absolute;
-	top: 0%;
-	left: 10%;
+	top: -15%;
+	left: 20%;
 	transform: scale(calc(70 / 100));
 }
 @media (min-width: 480px) {
