@@ -638,3 +638,22 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 12px;
 }
+@media (min-width: 768px) {
+	.modal-wrapper {
+		transform: scale(calc(80 / 100));
+	}
+}
+@media (min-width: 480px) {
+	.modal-wrapper {
+		transform: scale(calc(90 / 100));
+	}
+}
+.modal-wrapper {
+	position: absolute;
+	top: 10px; /* 10px od górnej granicy */
+	left: 50%; /* Środek szerokości ekranu */
+	transform: translateX(
+		-50%
+	); /* Przesunięcie o 50% szerokości, aby był wyśrodkowany */
+	transition: transform 0.3s ease-in-out;
+}
