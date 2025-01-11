@@ -597,24 +597,24 @@ body {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	border: none; /* Usunięcie obramowania */
-	border-radius: 50%; /* Zaokrąglony kształt */
+	border: none;
+	border-radius: 50%;
 	width: 40px;
 	height: 40px;
-	fill: var(--cloud); /* Wypełnienie ikony */
-	background-color: var(--iris); /* Kolor tła zgodny z numerem telefonu */
+	fill: var(--cloud);
+	background-color: var(--iris);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* Dodanie efektu cienia */
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .close-buttom-menu:hover,
 .close-buttom-menu:focus {
-	background-color: var(--ocean); /* Zmiana koloru tła na hover/focus */
-	transform: scale(1.1); /* Efekt powiększenia */
+	background-color: var(--ocean);
+	transform: scale(1.1);
 }
 
 .navi-menu {
@@ -748,14 +748,18 @@ body {
 .close-btn {
 	position: relative;
 	left: 290px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: none;
 	border-radius: 50%;
-	width: 24px;
-	height: 24px;
-	fill: var(--navyblue);
-	background: linear-gradient(0deg, #e7e9fc, #e7e9fc),
-		linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	width: 40px;
+	height: 40px;
+	fill: var(--cloud);
+	background-color: var(--iris);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
 }
 .header-form {
 	display: flex;
