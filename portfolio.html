@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="./css/footer.css">
+  <link rel="stylesheet" type="text/css" href="./css/moblie-menu.css">
+  <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,270 +18,335 @@
 </head>
 
 <body>
-  <header class="top-line">
-    <div class="conteiner top">
-      <a href="./index.html" class="logo"><span class="web">WEB</span><span class="studio">STUDIO</span></a>
-      <nav>
-        <ul class="navi">
-          <li><a href="./index.html" class="item-navi">Studio</a></li>
-          <li><a href="./portfolio.html" class="item-navi active">Portfolio</a></li>
-          <li><a href="#" class="item-navi">Contacts</a></li>
+  <header>
+    <div class="top-line">
+      <div class="conteiner top">
+        <a href="./index.html" class="logo"><span class="web">WEB</span><span class="studio">STUDIO</span></a>
+        <nav>
+          <ul class="navi">
+            <li><a href="./index.html" class="item-navi">Studio</a></li>
+            <li><a href="./portfolio.html" class="item-navi active">Portfolio</a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="item-navi">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li><a href="mailto:info@devstudio.com" class="item-contact">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:+110001111111" class="item-contact">+11 (000) 111-11-11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li><a href="mailto:info@devstudio.com" class="item-contact">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+110001111111" class="item-contact">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+            <g clip-path="url(#clip0_297068_2681)">
+              <path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866" stroke="#2E2F42"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_297068_2681">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
   <main>
     <!--buttons-->
-    <div>
-      <div class="conteiner">
-        <ul class="menu">
-          <li><button type="button" class="item-menu">All</button></li>
-          <li><button type="button" class="item-menu">Web Site</button></li>
-          <li><button type="button" class="item-menu">App</button></li>
-          <li><button type="button" class="item-menu">Design</button></li>
-          <li><button type="button" class="item-menu">Marketing</button></li>
-        </ul>
-      </div>
+    <div class="conteiner">
+      <ul class="menu">
+        <li><button type="button" class="item-menu"
+            ahref="https://www.linkedin.com/in/marta-paszkowska-282504263/">All</button></li>
+        <li><button type="button" class="item-menu" ahref="https://www.linkedin.com/in/marta-paszkowska-282504263/">Web
+            Site</button></li>
+        <li><button type="button" class="item-menu"
+            ahref="https://www.linkedin.com/in/marta-paszkowska-282504263/">App</button></li>
+        <li><button type="button" class="item-menu"
+            ahref="https://www.linkedin.com/in/marta-paszkowska-282504263/">Design</button></li>
+        <li><button type="button" class="item-menu"
+            ahref="https://www.linkedin.com/in/marta-paszkowska-282504263/">Marketing</button></li>
+      </ul>
     </div>
-    <!--row1-->
-    <div>
-      <div class="conteiner">
-        <ul class="row">
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row1img1.jpg" alt="a few shots from the phone screen with the app"
-                  width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Banking App Interface Concept</p>
-                <p>App</p>
-              </figcaption>
-            </figure>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row1img2.jpg" alt="phone scanning the QR code" width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Cashless Payment</p>
-                <p>Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row1img3.jpg" alt="computer and phone open on the same page" width="360"
-                  height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Meditation App</p>
-                <p>App</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-      <!--row2-->
-      <div>
-        <ul class="row">
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row2img1.jpg" alt="driver using phone navigation" width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Taxi Service</p>
-                <p>Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row2img2.jpg" alt="several screenshots with different screensavers"
-                  width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Screen Illustrations</p>
-                <p>Design</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row2img3.jpg" alt="joyful girl listening to music from the phone"
-                  width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Online Courses</p>
-                <p>Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-      <!--row3-->
-      <div>
-        <ul class="row last-row">
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row3img1.jpg"
-                  alt="screens showing how to make everything easier in the application" width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Instagram Stories Concept</p>
-                <p>Design</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row3img2.jpg" alt="woman returns from shopping for healthy food"
-                  width="360" height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Organic Food</p>
-                <p>Web Site</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="item-row">
-              <div class="box">
-                <img src="./images/portfolio/row3img3.jpg" alt="ballista makes decorative foam in coffee" width="360"
-                  height="300">
-                <div class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic
-                  Fruit Ecommerce App ·
-                  Cloud Storage App
-                </div>
-              </div>
-              <figcaption class="row-text">
-                <p class="row-header">Fresh Coffee</p>
-                <p>Web Site</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
+    <!--row-->
+    <div class="conteiner ">
+      <ul class="row ">
+        <li>
+          <figure class="item-row">
+            <img src="./images/portfolio/row1img1.jpg" alt="a few shots from the phone screen with the app" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+
+            </div>
+            <figcaption class="row-text">
+              <p class="row-header">Banking App Interface Concept</p>
+              <p>App</p>
+            </figcaption>
+          </figure>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row1img2.jpg" alt="phone scanning the QR code" width="360" height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+            </div>
+
+            <figcaption class="row-text">
+              <p class="row-header">Cashless Payment</p>
+              <p>Marketing</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row1img3.jpg" alt="computer and phone open on the same page" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+
+            </div>
+            <figcaption class="row-text">
+              <p class="row-header">Meditation App</p>
+              <p>App</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row2img1.jpg" alt="driver using phone navigation" width="360" height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+            </div>
+
+            <figcaption class="row-text">
+              <p class="row-header">Taxi Service</p>
+              <p>Marketing</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row2img2.jpg" alt="several screenshots with different screensavers" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+            </div>
+
+            <figcaption class="row-text">
+              <p class="row-header">Screen Illustrations</p>
+              <p>Design</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row2img3.jpg" alt="joyful girl listening to music from the phone" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+            </div>
+
+            <figcaption class="row-text">
+              <p class="row-header">Online Courses</p>
+              <p>Marketing</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row3img1.jpg"
+              alt="screens showing how to make everything easier in the application" width="360" height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+
+            </div>
+            <figcaption class="row-text">
+              <p class="row-header">Instagram Stories Concept</p>
+              <p>Design</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row3img2.jpg" alt="woman returns from shopping for healthy food" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+            </div>
+
+            <figcaption class="row-text">
+              <p class="row-header">Organic Food</p>
+              <p>Web Site</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="item-row">
+
+            <img src="./images/portfolio/row3img3.jpg" alt="ballista makes decorative foam in coffee" width="360"
+              height="300">
+            <div class="overlay">
+              14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
+              App · Exotic
+              Fruit Ecommerce App ·
+              Cloud Storage App
+
+            </div>
+            <figcaption class="row-text">
+              <p class="row-header">Fresh Coffee</p>
+              <p>Web Site</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
     </div>
   </main>
-  <footer class="bg-dark">
+  <!--footer-->
+  <footer>
     <div class="conteiner bottom">
-      <div class="bottom-items-one">
-        <a href="./index.html" class="logo-bottom"><span class="web">WEB</span><span class="studio"
-            style="color: #f4f4fd">STUDIO</span></a>
-        <p>Increase the flow of customers and sales for your business with digital marketing &
-          growth
-          solutions.</p>
-      </div>
-      <div class="bottom-items-two">
-        <p>Social media</p>
-        <ul class="social-list-icons-bottom">
-          <li>
-            <a href="#" class="background_sm_footer">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="background_sm_footer">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="background_sm_footer">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="background_sm_footer">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="bottom-items-three">
-        <form>
-          <label class="sub-bottom">
-            Subscribe
-            <input class="subscribe" type="email" name="email" placeholder="E-mail" required>
-          </label>
-          <button type="submit" class="sub-button">Subscribe<svg width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
+      <ul class="bottom-items">
+        <li>
+          <a href="./index.html" class="logo-bottom"><span class="web">WEB</span><span class="studio"
+              style="color: #f4f4fd">STUDIO</span></a>
+          <p class="text-bottom">Increase the flow of customers and sales for your business with digital marketing &
+            growth
+            solutions.</p>
+        </li>
+        <li>
+          <p class="social-text-bottom">Social media</p>
+          <ul class="social-list-icons-bottom">
+            <li>
+              <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="background-social-footer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="background-social-footer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="background-social-footer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="background-social-footer">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <form class="subscribe-button-relative">
+            <label class="subscribe-text-bottom" for="email-bottom">
+              Subscribe
+            </label>
+            <input class="subscribe-input" type="email" name="email" id="email-bottom" placeholder="E-mail" required>
+            <div class="subscribe-button-positions">
+              <button type="submit" class="subscribe-button">Subscribe<svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </li>
+      </ul>
     </div>
   </footer>
+  <!--mobile-menu-->
+  <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-wrapper">
+      <button class="close-button-menu js-close-menu"><svg width="20" height="20">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="navi-menu">
+          <li><a href="./index.html" class="item-navi-menu ">Studio</a></li>
+          <li><a href="./portfolio.html" class="item-navi-menu active-menu">Portfolio</a></li>
+          <li><a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="item-navi-menu">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="contact-menu">
+        <li><a href="tel:+110001111111" class="item-contact-tel">+11 (000) 111-11-11</a>
+        </li>
+        <li><a href="mailto:info@devstudio.com" class="item-contact-mail">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="social-list-menu">
+        <li>
+          <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="social-list-menu-icons">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="social-list-menu-icons">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="social-list-menu-icons">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/marta-paszkowska-282504263/" class="social-list-menu-icons">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

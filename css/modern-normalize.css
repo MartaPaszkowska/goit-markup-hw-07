@@ -5,6 +5,52 @@
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+:root {
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navyblue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--lightslate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navybluemodal: rgba(46, 47, 66, 0.4);
+	--grey: #2e2f42;
+	--white: #ffffff;
+	--dairy: #fcfcfc;
+	--activehover: #000000;
+}
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--slate);
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.conteiner {
+	max-width: 480px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (min-width: 768px) {
+	.conteiner {
+		min-width: 768px;
+	}
+}
+@media (min-width: 1200px) {
+	.conteiner {
+		max-width: 1200px;
+		padding: 0;
+	}
+}
+.section {
+	padding: 96px 0px;
+}
 *,
 ::after,
 ::before {
